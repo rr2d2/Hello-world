@@ -1,3 +1,26 @@
  this will be my hungry file
 
 now one more time pull and push one more change to make sure I understand how to do the basics
+
+
+Ackerman test //not sure if this will work in c b/c bool is not a type in gcc I believe
+#include<math.h>
+
+bool CheckValue(int n, int m, int c){
+   int answer=0;
+   switch (m){//switch finds row and answer is the intersection with appropriate column
+      case 0: answer = n+1;
+         break;
+      case 1: answer = n+2;
+         break;
+      case 2: answer = 2n+3;
+         break;
+      case 3: answer = pow(2,(n+3))-3;
+         break;
+   }
+   if(c != 0){//sanity check
+      if(c==answer)return true;
+         else return false;
+   }
+   else 
+}
